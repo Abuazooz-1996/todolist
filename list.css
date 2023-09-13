@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;1000&family=Dancing+Script:wght@400;500&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:wght@400;500;700&family=Open+Sans:wght@400;700&family=Playfair+Display:ital,wght@1,400;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+:root{
+    --bg:#fff;
+    --bb:black
+}
+
+.dark-theme{
+    --bg:black;
+    --bb:#fff
+}
+body{
+    background-color: var(--bg);
+    font-family: 'Roboto', sans-serif;
+
+}
+.container{
+    width: fit-content;
+    border: 3px solid  #009688;;
+    box-shadow: 16px 10px 9px 0px #009688;
+    background-color: var(--bg);
+    color: var(--bb);
+    border-radius: 10px;
+    margin: auto;
+    padding: 0 40px;
+}
+h1{
+    text-align: left;
+    padding: 10px;
+    color: var(--bb);
+}
+.add p{
+    text-align: left;
+    margin: -20px 0 30px 11px;
+}
+input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--bb);
+    background-color: transparent;
+    color: var(--bb);
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+.add form p{
+    background: #009688;
+    margin: 19px 0;
+    width: fit-content;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.tasks .button{
+    background: #ff0000c9;
+    margin: 19px 0;
+    width: fit-content;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+
+
+}
+.pass{
+    width: 50px;
+    height: 25px;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid #666;
+    background-color: var(--bb);
+    margin: 30px auto;
+    left: 140px;
+    cursor: pointer;
+
+    cursor: pointer;
+}
+.pass span{
+    width: 25px;
+    position: absolute;
+    height: 100%;
+    background: #ccc;
+    right: 0px;
+    border-radius: 50%;
+    border: 2px solid #666;
+    box-sizing: border-box;
+}
+.on{
+    background-color: var(--bb);
+}
+.left{
+    left: 0;
+}
+.lists .list{
+    margin: 10px 0;
+    background: #009688;
+    padding: 10px;
+    text-align: left;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lists .list i{
+    cursor: pointer;
+    padding: 7px 10px;
+    font-size: 13px;
+    margin: -26px -10px 0 -59px;
+    background: red;
+    border-radius: 6px 6px 0 6px;
+}
+.lists .list span{
+    background: #fff;
+    color: #3e7e78;
+    padding: 3px 15px;
+    border-radius: 6px;
+    font-weight: bolder;
+}
+
+
+
+.no{
+    display: none !important;
+}
+.check{
+  text-decoration: line-through;
+}
+
+
+
+
+
+@media (max-width:768px) {
+    .container{
+        margin: 202px 18px;
+    }
+    .pass{
+        left: 100px;
+    }
+}
+
+@media (max-width:300px) {
+    .container{
+        margin: 202px 18px;
+    }
+    .pass{
+        left: 80px;
+    }
+    .add form p,.tasks .button{
+        padding: 10px;
+        font-size: 15px;
+        
+    }
+}
+
